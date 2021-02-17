@@ -13,4 +13,6 @@ HTTP报文的主体用于传输请求或响应的实体主体。
 
 
 
-![](G:\Work\Note\计算机网络\images\message body and entity body.png)
+![](https://i.loli.net/2021/02/17/xaGUb9VJN4cM67L.png)
+
+test
