@@ -130,3 +130,13 @@ Spring入门
 - propagation_nested：如果当前存在事务，则在嵌套事务内执行。如果当前没有事务，则执行与propagation_required类似的操作
 
 Spring 默认的事务传播行为是 PROPAGATION_REQUIRED，它适合于绝大多数的情况。
+
+#### 9.Spring Mvc
+
+##### 处理流程图
+
+![image-20210404144648702](https://i.loli.net/2021/04/04/W87MhwB3yFC1NTv.png)
+
+##### 处理流程
+
+![image-20210404144559871](https://i.loli.net/2021/04/04/uHCi9O7hIMYVXxp.png)

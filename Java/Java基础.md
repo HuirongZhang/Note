@@ -5,6 +5,25 @@ Java基础
 - 行为模型应该总是通过接口而不是抽象类定义，所以通常是优先选用接口，尽量少用抽象类。
 - 选择抽象类的时候通常是如下情况：需要定义子类的行为，又要为子类提供通用的功能。
 
+#### Java 为什么不支持多继承？
+
+c++首先引入的多重继承带来了诸如菱形继承一类的问题，而后为了解决这个问题又不得不引入了虚继承这种概念。然而在实际的应用中人们发现继承更多的只被用在两种场合：扩充/改善基类，以及实现多态。对于前者，单继承足以；而对于后者，则真正需要的其实是纯抽象类，即只包含纯虚函数的基类。而对于这一种基类，由于其目的和普通的实例类已经有所不同，因此在java中将其改称为interface，即接口加以明确区分。
+
+因此，java或者c#所谓的不支持多重继承，只是不支持对实例类的多重继承——因为这种继承所带来的一点点代码上的缩减远比不上其引入的麻烦，但是对于用于实现多态的多重继承，即implement interface依然是很好的支持了的。
+
+
+
+作者：Chen Moore
+链接：https://www.zhihu.com/question/24317891/answer/65133373
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+C++继承分析
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20190116230607742.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpYW8zNDA0,size_16,color_FFFFFF,t_70)
+
+图片来源https://blog.csdn.net/c_base_jin/article/details/86036185
+
 #### 2.Java泛型
 
 - 类型参数必须是一个合法的标识符，习惯上使用单个大写字母，通常情况下，K 表示键，V 表示值，E 表示异常或错误，T 表示一般意义上的数据类型。
@@ -23,6 +42,8 @@ Java基础
 #### 4.Java集合框架
 
 https://lazydog036.gitee.io/2020/10/29/JAVA集合框架/#Collections工具类
+
+
 
 #### 5.volidate
 
@@ -44,5 +65,11 @@ https://lazydog036.gitee.io/2020/10/29/JAVA集合框架/#Collections工具类
 
 #### 6.反射
 
+#### 7.注解
 
+- https://blog.csdn.net/qq_20009015/article/details/106038023
+- https://www.race604.com/annotation-processing/
 
+## 
+
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200510163723241.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzIwMDA5MDE1,size_16,color_FFFFFF,t_70)
